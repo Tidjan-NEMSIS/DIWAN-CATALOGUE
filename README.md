@@ -59,25 +59,40 @@ python generate_maison_db.py
 - Projet d'origine : https://github.com/alimar440/TurboSearch
 
 ## Captures d'écran
-*(À insérer après build)*
+
+### Présentation générale
+![Présentation générale](images/Captures/Presentation_capture.png)
+
+### Diagramme circulaire (statistiques)
+![Diagramme circulaire](images/Captures/Circular_Diagramme.png)
+
+### Évolution des performances de hachage
+![Évolution du hachage](images/Captures/Evolution_hachage.png)
+
+### Graphique en barres comparatif
+![Graphique en barres](images/Captures/Graphic_bar.png)
 
 
+## Fonctionnement de l’application
 
-## Fonctionnalités
+1. **Accueil / Navigation**  
+   L’utilisateur accède à la liste des maisons, peut naviguer, rechercher ou filtrer les biens immobiliers.
 
-### Page d'Accueil
+2. **Ajout/Suppression/Modification**  
+   Possibilité d’ajouter une nouvelle maison, de modifier ses informations ou de la supprimer. Chaque maison peut être illustrée par 4 photos (2 intérieures, 2 extérieures).
 
-![Page d'Accueil](images/page_accueil.png)
+3. **Gestion de la table de hachage**  
+   L’utilisateur peut choisir entre plusieurs fonctions de hachage (f1, f2, f3) pour stocker les maisons, ou utiliser un mode sans hachage. Les performances (collisions, temps d’accès) sont analysées et visualisées.
 
-Accédez à toutes les fonctionnalités depuis la page d'accueil.
+4. **Analyse et visualisation graphique**  
+   Les résultats des analyses sont affichés sous forme de graphiques (courbes, diagrammes circulaires, barres) grâce à Qt Charts.
 
-### Insertion
+5. **Export des données**  
+   Les données et résultats peuvent être exportés en CSV ou JSON pour une exploitation externe.
 
-![Insertion](images/page_insertion.png)
+6. **Interface moderne**  
+   L’application propose un thème sombre, un effet glassmorphisme et une navigation intuitive via des menus inspirés de Windows.
 
-Ajoutez de nouvelles voitures avec des informations détaillées.
-
-### Recherche
 
 ![Recherche](images/page_recherche.png)
 
