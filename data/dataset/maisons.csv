@@ -1,0 +1,2 @@
+id,type,standing,chambres,toilettes,description,photo1,photo2,photo3,photo4
+MAISON001,Villa,Standard,5,3,Belle villa de standard,data/dataset\photos\maison_001_photo_1.jpg,data/dataset\photos\maison_001_photo_2.jpg,data/dataset\photos\maison_001_photo_3.jpg,data/dataset\photos\maison_001_photo_4.jpg

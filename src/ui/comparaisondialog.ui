@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ComparaisonDialog</class>
+ <widget class="QDialog" name="ComparaisonDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabVitesse">
+      <attribute name="title">
+       <string>Vitesse</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidgetVitesse">
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Courbe</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QChartView" name="chartViewVitesseCourbe"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_vitesse_barres">
+            <attribute name="title">
+             <string>Barres</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_vitesse_barres">
+             <item>
+              <widget class="QChartView" name="chartViewVitesseBarres"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tab_vitesse_circulaire">
+            <attribute name="title">
+             <string>Circulaire</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_vitesse_circulaire">
+             <item>
+              <widget class="QChartView" name="chartViewVitesseCirculaire"/>
+             </item>
+            </layout>
+           </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabCollisions">
+      <attribute name="title">
+       <string>Collisions</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidgetCollisions">
+         <widget class="QWidget" name="tabCollisionsCourbe">
+          <attribute name="title">
+           <string>Courbe</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QChartView" name="chartViewCollisionsCourbe"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabCollisionsBarres">
+          <attribute name="title">
+           <string>Barres</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QChartView" name="chartViewCollisionsBarres"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabCollisionsCirculaire">
+          <attribute name="title">
+           <string>Circulaire</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QChartView" name="chartViewCollisionsCirculaire"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabTableau">
+      <attribute name="title">
+       <string>Tableau Détaillé</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTableWidget" name="tableWidgetResultats">
+         <column>
+          <property name="text">
+           <string>Collisions</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Taux d'Occupation</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Temps d'Insertion</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Temps de Recherche</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabEvolution">
+      <attribute name="title">
+       <string>Évolution</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_evolution">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidgetEvolution">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tabEvolutionCollisions">
+          <attribute name="title">
+           <string>Évolution des Collisions</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_evo_coll">
+            <item>
+             <widget class="QChartView" name="chartViewEvolutionCollisions"/>
+            </item>
+           </layout>
+         </widget>
+         <widget class="QWidget" name="tabEvolutionVitesse">
+          <attribute name="title">
+           <string>Évolution de la Vitesse</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_evo_vit">
+           <item>
+            <widget class="QLabel" name="label_evo_ins">
+             <property name="text">
+              <string>Évolution du Temps d'Insertion</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QChartView" name="chartViewEvolutionVitesseInsertion"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_evo_rech">
+             <property name="text">
+              <string>Évolution du Temps de Recherche</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QChartView" name="chartViewEvolutionVitesseRecherche"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ComparaisonDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ComparaisonDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

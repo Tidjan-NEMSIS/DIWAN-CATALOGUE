@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="icons/logo.png">images/logo_house.png</file>
+        <file alias="doc/documentation.txt">doc/documentation.txt</file>
+        <file alias="styles/style.qss">src/ui/style.qss</file>
+    </qresource>
+</RCC>

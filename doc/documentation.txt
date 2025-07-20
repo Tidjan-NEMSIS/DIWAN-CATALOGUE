@@ -1,0 +1,45 @@
+<h1><font color="#2c3e50">Diwan-Catalogue - Documentation</font></h1>
+<i>Version 1.0</i>
+<hr>
+
+<p>Bienvenue dans <b>Diwan-Catalogue</b>, votre application de gestion de biens immobiliers.</p>
+
+<p>Cette application a été conçue pour permettre une gestion <u>simple et efficace</u> d'un catalogue de maisons, appartements et autres biens.</p>
+
+<h2><font color="#3498db">Fonctionnalités principales :</font></h2>
+
+<ul>
+    <li><b>Catalogue Visuel :</b> Parcourez l'ensemble de vos biens avec un affichage clair des photos et des informations essentielles.</li>
+    <li><b>Insertion Détaillée :</b> Ajoutez de nouveaux biens via un formulaire complet, incluant jusqu'à 4 photos, le type de bien, le standing, le nombre de pièces, etc.</li>
+    <li><b>Suppression Facile :</b> Retirez un bien du catalogue en un seul clic.</li>
+    <li><b>Navigation Intuitive :</b> Utilisez les boutons 'Précédent' et 'Suivant' pour naviguer facilement entre les fiches des biens.</li>
+    <li><b>Table de Hachage Performante :</b> Le cœur de l'application repose sur une table de hachage personnalisée pour un stockage et une récupération rapides des données. Les collisions sont gérées par <i>chaînage</i>.</li>
+</ul>
+
+<hr>
+
+<h2><font color="#3498db">Outils Avancés :</font></h2>
+
+<p>Le menu 'Outils' vous donne accès à des fonctionnalités avancées pour analyser les performances de l'application.</p>
+
+<h4>Choix de la Fonction de Hachage :</h4>
+<ul>
+    <li><b>F1 (Somme des Caractères) :</b> Une fonction simple, rapide mais sensible aux anagrammes.</li>
+    <li><b>F2 (Hachage Polynomial) :</b> Une fonction plus robuste, basée sur une évaluation polynomiale.</li>
+    <li><b>F3 (DJB2) :</b> Un algorithme reconnu pour sa bonne distribution et sa simplicité.</li>
+    <li><b><font color="#e74c3c">Sans Hachage :</font></b> Un mode de base pour la comparaison, où toutes les clés génèrent une collision.</li>
+</ul>
+
+<h4>Comparaison Graphique :</h4>
+<p>Cet outil puissant vous permet de visualiser les performances de chaque fonction de hachage sur votre jeu de données actuel. Il affiche :</p>
+<ul>
+    <li>Le nombre de collisions.</li>
+    <li>Le temps d'insertion moyen.</li>
+    <li>Le temps de recherche moyen.</li>
+    <li>Le taux d'occupation de la table.</li>
+</ul>
+
+<hr>
+
+<p>Développé avec <b>Qt 6</b> et <b>C++</b>.</p>
+<p><i><font color="#7f8c8d">Merci d'utiliser Diwan-Catalogue !</font></i></p>

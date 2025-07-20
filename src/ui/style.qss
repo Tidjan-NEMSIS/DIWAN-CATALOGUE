@@ -1,0 +1,299 @@
+/*
+ * Diwan-catalogue - Dark Theme
+ * Inspired by Tabax Senegal Dashboard
+ *
+ * Palette:
+ * - Dark Blue (Background): #1C2533
+ * - Medium Blue (Widgets): #2C3A4F
+ * - Light Gray (Text): #E0E0E0
+ * - Accent Yellow (Buttons, Highlights): #FDB913
+ */
+
+/* --- Global --- */
+QWidget {
+    background-color: #1C2533;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 10pt;
+}
+
+/* --- Main Window --- */
+QMainWindow {
+    background-color: #1C2533;
+}
+
+/* --- Labels --- */
+QLabel, QCheckBox {
+    color: #E0E0E0;
+}
+
+/* --- GroupBox --- */
+QGroupBox {
+    background-color: #2C3A4F;
+    border: 1px solid #445266;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #E0E0E0;
+}
+
+/* --- Buttons --- */
+QPushButton {
+    background-color: #FDB913;
+    color: #1C2533;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #ffc107; /* Lighter yellow */
+}
+
+QPushButton:pressed {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+QPushButton:disabled {
+    background-color: #445266;
+    color: #8899aa;
+}
+
+
+/* --- Input Fields --- */
+QLineEdit, QTextEdit, QTextBrowser, QSpinBox {
+    background-color: #2C3A4F;
+    color: #E0E0E0;
+    border: 1px solid #445266;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QSpinBox:focus {
+    border: 1px solid #FDB913;
+}
+
+/* --- Menu Bar --- */
+QMenuBar {
+    background-color: #2C3A4F;
+    color: #E0E0E0;
+    border-bottom: 1px solid #445266;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #445266;
+    color: #FDB913;
+}
+
+QMenu {
+    background-color: #2C3A4F;
+    color: #E0E0E0;
+    border: 1px solid #445266;
+}
+
+QMenu::item:selected {
+    background-color: #FDB913;
+    color: #1C2533;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #445266;
+    margin: 4px 0;
+}
+
+/* --- Status Bar --- */
+QStatusBar {
+    background-color: #2C3A4F;
+    color: #E0E0E0;
+    border-top: 1px solid #445266;
+}
+
+/* --- Scroll Bars --- */
+QScrollBar:vertical {
+    border: none;
+    background: #2C3A4F;
+    width: 12px;
+    margin: 15px 0 15px 0;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #445266;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #FDB913;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 15px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2C3A4F;
+    height: 12px;
+    margin: 0 15px 0 15px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #445266;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #FDB913;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 15px;
+}
+
+/* --- Specific Widgets --- */
+#bannerWidget {
+    background-color: #2C3A4F;
+    border-radius: 8px;
+}
+
+#photo_display_label, #thumbnail_1, #thumbnail_2, #thumbnail_3 {
+    background-color: #2C3A4F;
+    border: 1px solid #445266;
+    border-radius: 8px;
+}
+
+#thumbnail_1:hover, #thumbnail_2:hover, #thumbnail_3:hover {
+    border: 2px solid #FDB913;
+}
+
+
+/* --- Fenêtre principale et Body --- */
+QMainWindow, #centralwidget {
+    background-color: #212121; /* Gris très foncé (Melbet BG) */
+}
+
+/* --- Bandeau supérieur --- */
+#bannerWidget {
+    background-color: #2F2F2F; /* Gris moyen (Melbet Panel) */
+    border-bottom: 3px solid #FDB913; /* Jaune accent (Melbet Yellow) */
+}
+
+/* --- Titre de l'application dans le bandeau --- */
+#labelAppName {
+    color: #FFFFFF;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+/* --- Menu Bar --- */
+QMenuBar {
+    background-color: #2F2F2F;
+    color: #E0E0E0; /* Blanc cassé */
+    font-size: 16px;
+    padding: 5px;
+}
+
+QMenuBar::item { padding: 8px 12px; background-color: transparent; }
+QMenuBar::item:selected { background-color: #FDB913; color: #212121; } /* Jaune accent, texte foncé */
+
+/* --- Menus déroulants --- */
+QMenu { background-color: #2F2F2F; color: #E0E0E0; border: 1px solid #424242; font-size: 15px; }
+QMenu::item:selected { background-color: #FDB913; color: #212121; } /* Jaune accent, texte foncé */
+
+/* --- Section Détails Maison --- */
+#detailsGroup { background-color: transparent; border: none; }
+
+QGroupBox#detailsGroup::title {
+    color: #FFFFFF; /* Titre en blanc */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- Labels Attributs (ID, Type, etc.) --- */
+#label_id_key, #label_type_key, #label_standing_key, #label_chambres_key, #label_toilettes_key {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #FDE488, stop:1 #FDB913);
+    color: #212121;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+/* --- Labels Valeurs (MAISON001, etc.) --- */
+#label_id_val, #label_type_val, #label_standing_val, #label_chambres_val, #label_toilettes_val {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* --- Zone de Description (Style Fieldset) --- */
+QGroupBox#descriptionGroupBox {
+    border: 1px solid #FDB913; /* Bordure jaune */
+    border-radius: 8px;
+    margin-top: 10px; /* Espace pour le titre */
+}
+
+QGroupBox#descriptionGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    background-color: #212121; /* Même couleur que le fond principal */
+    padding: 0 5px;
+    color: #FDB913; /* Titre en jaune */
+    font-weight: bold;
+}
+
+#text_description {
+    background-color: transparent; /* Fond transparent, le parent gère la couleur */
+    color: #FFFFFF;
+    font-size: 15px;
+    border: none; /* La bordure est sur le GroupBox */
+}
+
+/* --- Conteneur de la photo principale --- */
+#photoLabel, #photo_display_label {
+    background-color: #2F2F2F;
+    border: 1px solid #424242;
+    border-radius: 4px;
+}
+
+/* --- Boutons --- */
+QPushButton {
+    background-color: #FDB913;
+    color: #212121; /* Texte foncé pour lisibilité sur jaune */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+QPushButton:hover { background-color: #EAA800; } /* Jaune plus foncé */
+QPushButton:pressed { background-color: #D49700; }
+QPushButton:disabled { background-color: #555; color: #888; }
+
+/* --- Status Bar --- */
+QStatusBar {
+    color: #E0E0E0;
+    font-size: 13px;
+}
