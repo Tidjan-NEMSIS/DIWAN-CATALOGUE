@@ -54,9 +54,6 @@ python generate_maison_db.py
 - Export CSV/JSON
 - Courbes Qt Charts
 
-## Auteurs
-- Adaptation et refonte : [Votre nom]
-- Projet d'origine : https://github.com/alimar440/TurboSearch
 
 ## Captures d'écran
 
